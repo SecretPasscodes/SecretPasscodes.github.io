@@ -6,12 +6,30 @@
     <title>Redirect</title>
 </head>
 <body>
+    <p>Yeah you found it</p>
+    <p>So if the code you enterd is valid.</p>
+    <p>Then you should be redirected.</p>
+    <p>Otherwise go back a page or press the:"Button :P"</p>
+    <button id="Button">Button :P</button>
     <script>
+        document.getElementById("Button").addEventListener("click",FnButton)
+        function FnButton(){
+            window.location.href="index.html";
+        }
         var LinkCode = document.location.pathname.replace("/","");
         if(LinkCode == "dbej2x"){}
         if(LinkCode == "654321"){}
         if(LinkCode == "dIa98B"){}
         if(LinkCode == "000000"){window.location.href="https://www.google.com";}
     </script>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        #Button{
+            background-color: rgb(100,100,100);
+        }
+    </style>
 </body>
 </html>
